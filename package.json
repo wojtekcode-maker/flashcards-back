@@ -2,10 +2,10 @@
   "name": "flashcards-back",
   "version": "0.0.1",
   "description": "Application for learning self-added words.",
-  "main": "index.ts",
+  "main": "server.ts",
   "scripts": {
-    "start": "ts-node index.ts",
-    "start:dev": "tsnd index.ts",
+    "start": "ts-node server.ts",
+    "start:dev": "tsnd server.ts",
     "build": "tsc"
   },
   "author": "Wojciech Domżał",

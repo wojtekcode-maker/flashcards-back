@@ -3,6 +3,7 @@ import http from 'http';
 import mongoose from 'mongoose';
 
 import {config} from "./config/config";
+import {flashcardRouter} from "./routes/Flashcard.route";
 
 const router = express();
 
@@ -19,6 +20,8 @@ mongoose
 const startServer = () => {
   router.use(express.urlencoded({extended: true}));
   router.use(express.json());
+
+  router.use('/words', flashcardRouter);
 
   /* error handling */
   router.use((req,res,next) => {
